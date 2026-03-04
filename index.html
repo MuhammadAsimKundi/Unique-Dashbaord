@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saas Dashboard</title>
+    <title>Unique Work Dashboard</title>
     <link rel="stylesheet" href="./css/style.css">
     <!-- google fonts -->
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"> -->
@@ -93,7 +93,55 @@
 
         <!--  Main Content as 2nd Section -->
         <div class="main">
+            <!-- for the top navigation etc -->
+            <div class="top">
+                <!-- first layer -->
+                <div class="first-layer">
+                    <div>
+                        <i class="fa-regular fa-square" style="color: #5b9fff;"></i>
+                        <h2>Unique</h2>
+                    </div>
+                    <ul>
+                        <li><i class="fa-solid fa-magnifying-glass"></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                        <li><i class="fa-solid fa-ellipsis-vertical"></i></li>
+                    </ul>
+                </div>
 
+                <!-- second layer -->
+                <div class="second-layer">
+                    <ul>
+                        <li><i class="fa-regular fa-square"></i> &nbsp; Website</li>
+                        <li><i class="fa-regular fa-square"></i> &nbsp; iOS App</li>
+                        <li><i class="fa-regular fa-square"></i> &nbsp; Dribble Shot</li>
+                    </ul>
+                </div>
+
+                <!-- third layer -->
+                <div class="third-layer">
+                    <div class="third-right">
+                        <ul>
+                            <!-- i am not adding a tags because we are not using for real world use -->
+                            <li>Discussion</li>
+                            <li>Tasks</li>
+                            <li>Timelines</li>
+                            <li>Files</li>
+                            <li>Overview</li>
+                        </ul>
+                    </div>
+                    <div class="third-left">
+                        <img src="./images/pic1.jpg" alt="">
+                        <img src="./images/pic1.jpg" alt="">
+                        <img src="./images/pic1.jpg" alt="">
+                        <img src="./images/pic1.jpg" alt="">
+
+                    </div>
+                </div>
+                
+            </div>
+
+            <!-- for the bottom main content -->
+            <div class="bottom"></div>
         </div>
 
 
@@ -128,36 +176,50 @@
                     <p>Hi, I have a great news. A new Project is <br> starting. I'll tell you more about it later.</p>
                     <span class="time">08:29</span>
                 </div>
+
                 <div>
                     <p>its a new neobank with great deposit terms</p>
                     <span class="time">08:30</span>
                 </div>
+
                 <div style="width: 55%;">
                     <p><i class="fa-solid fa-paperclip"></i> acorns.com <br> https://www.acorns.com</p>
                     <span class="time">08:30</span>
                 </div>
-                <div style="width: 55%;">
-                    <p>Hi. wow, that's intriguing</p>
-                    <span class="time">08:30</span>
+
+                <!-- send chats with blue background -->
+                <div class="send">
+                    <div class="send-chats" style="width: 55%;">
+                        <p>Hi. wow, that's intriguing</p>
+                        <span class="time">08:30</span>
+                    </div>
+                    <div class="send-chats" style="width: 78%;">
+                        <p>I am looking forward to the details.</p>
+                        <span class="time">08:30</span>
+                    </div>
                 </div>
-                <div style="width: 75%;">
-                    <p>I am looking forward to the details.</p>
-                    <span class="time">08:30</span>
-                </div>
+                
                 <div style="width: 55%;">
-                    <nav>
-                        <li><span>Meeting</span></li>
-                        <li><i class="fa-solid fa-ellipsis-vertical"></i></li>
-                    </nav>
+                    <section>
+                        <span>Meeting</span>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </section>
                     <p>July 28</p>
-                    <span class="time">02:20 pm</span>
+                    <p class="meeting-time">02:20 pm</p>
                     <hr>
                     <p>Add to Schedule</p>
                 </div>
-                <div>
+                <div style="width: 65%;" class="send-small">
                     <p>Ok, I can't wait to get started</p>
                     <span class="time">08:32</span>
                 </div>
+            </div>
+
+            <!-- input search box in chat bottom -->
+            <div class="container">
+                <i class="fa-solid fa-paperclip icon-left"></i>
+                <input type="search" placeholder="Type a message...">
+                <i class="fa-solid fa-microphone icon-right"></i>
             </div>
         </div>
     </div>
