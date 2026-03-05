@@ -150,47 +150,67 @@
                 <div class="top-row">
                     <div>
                        <ul>
-                            <li><i class="fa-solid fa-columns"></i> &nbsp; Kanban</li>
-                            <li><i class="fa-solid fa-table"></i> &nbsp; Table</li>
-                            <li><i class="fa-solid fa-list-ul"></i> &nbsp; List View</li>
+                            <li><i class="fa-solid fa-columns"></i> Kanban</li>
+                            <li><i class="fa-solid fa-table"></i> Table</li>
+                            <li><i class="fa-solid fa-list-ul"></i> List View</li>
                         </ul>
                         <span><i class="fa-solid fa-sliders"></i> &nbsp; Filter</span> 
                     </div>
                     <hr>
                     
                 </div>
-
+                <!-- column one is here -->
                 <div class="colOne">
-                    <h6></h6>
-                    <p>+</p>
-                    <div>
-                        <ul>
-                            <li>Website</li>
-                            <li>Design</li>
-                        </ul>
+
+                    <div class="request">
+                        <div>
+                            <span class="red-dot"></span>
+                            <p>&nbsp; New Request</p>
+                            <span>6</span> 
+                        </div>
                         <i class="fa-solid fa-ellipsis-vertical"></i>
                     </div>
-                    <h4>Pages "About" and "Careers"</h4>
-                    <p>All the details are in the file, I'm <br> sure it will turn out cool!</p>
 
-                    <form action="">
-                        <label for="">
-                            <input type="radio" name="option" value="1">
-                            About
-                        </label>
-                        <br>
-                        <label for="">
-                            <input type="radio" name="option" value="2">
-                            Careers
-                        </label>
-                    </form>
-                    <hr>
-                    <p>&nbsp;+ &nbsp;Add Subtask</p>
-                    <hr>
-                    <div>
-                        <img src="./images/pic1.jpg" style="width: 30px; height: 30px;">
-                        <img src="./images/pic2.jpg" style="width: 30px; height: 30px;">
+                    <!-- for the + addition button -->
+                    <h2 class="additionSign">+</h2>
+
+                    <div class="small-section">
+                        <div class="request">
+                            <ul class="section-icon-ul">
+                                <li>Website</li>
+                                <li>Design</li>
+                            </ul>
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <h4>Pages "About" and "Careers"</h4>
+                        <p style="color: #787878;">All the details are in the file, I'm <br> sure it will turn out cool!</p>
+                        
+                        <form class="radio-form">
+                            <label for="">
+                                <input type="radio" name="option" value="1">
+                                About
+                            </label>
+                            <br>
+                            <label for="">
+                                <input type="radio" name="option" value="2">
+                                Careers
+                            </label>
+                        </form>
+                        <hr>
+                        <p class="add-subtask">&nbsp;+ &nbsp;Add Subtask</p>
+                        <hr>
+                        <div class="smallSections-footer">
+                            <div>
+                                <img src="./images/pic1.jpg">
+                                <img src="./images/pic2.jpg">
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-comment">10</i>
+                                <i class="fa-solid fa-paperclip">2</i>
+                            </div>
+                        </div>
                     </div>
+                    
                 </div>
 
                 <div class="colTwo"></div>

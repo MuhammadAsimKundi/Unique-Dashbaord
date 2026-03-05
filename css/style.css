@@ -269,12 +269,13 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 90px 1fr 1fr;
     gap: 10px;
+    padding: 40px 20px;
     /* optional spacing between items */
 }
 
 .top-row{
     grid-area: top-row;
-    background: rgb(255, 202, 229);
+    /* background: rgb(255, 202, 229); */
     padding: 40px 40px;
     display: flex;
     flex-direction: column;
@@ -289,9 +290,129 @@ body {
 .top-row div ul{
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 25px;
     list-style: none;
 }
+
+.top-row div ul li:hover {
+    padding: 5px;
+    background: lightgrey;
+    border-radius: 10px;
+}
+
+/* first column */
+.colOne{
+    /* padding: 10px; */
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.request{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 1px;
+    color: #353535;
+}
+.request div{
+    display: flex;
+    align-items: center;
+    gap: 5px 0;
+    font-size: 1rem;
+}
+.red-dot{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: red;
+}
+
+/* + addition sign */
+.additionSign{
+    width: 100%;
+    background-color: #fff;
+    border-radius: 7px;
+    text-align: center;
+}
+
+/* small section */
+.small-section{
+    background: #fff;
+    border-radius: 7px;
+    padding: 10px;
+}
+
+.section-icon-ul{
+    list-style: none;
+    display: flex;
+    gap: 8px;
+    font-size: 0.7rem;
+}
+
+.section-icon-ul li {
+    padding: 2px;
+    color: white;
+    border-radius: 12px;
+}
+
+.section-icon-ul :nth-child(1){
+    background: rgb(70, 150, 255);
+}
+.section-icon-ul :nth-child(2) {
+    background: rgb(0, 199, 0);
+}
+
+/* remain text size on section other then request etc */
+.small-section h4,p,form{
+    font-size: 0.9rem;
+}
+
+.radio-form{
+    padding: 12px 0;
+    color: #787878;
+}
+.radio-form label{
+    display: inline-block;
+    padding: 3px 0;
+
+}
+
+/* add-subtask element */
+.add-subtask{
+    padding: 12px 0px;
+    color: #787878;
+}
+
+/* small section footer */
+.smallSections-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 5px;
+}
+
+.smallSections-footer div{
+    display: flex;
+    align-items: center;
+}
+
+.smallSections-footer>div img{
+    width: 30px;
+    height: 30px;
+    border: 2px solid lightgray;
+    border-radius: 50%;
+}
+
+.smallSections-footer div img+img {
+    margin-left: -7.5px;
+    /* 25% overlap */
+}
+
+.smallSections-footer :nth-child(2) {
+    gap: 15px;
+}
+
+
 
 
 
