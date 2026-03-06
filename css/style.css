@@ -150,7 +150,8 @@ body {
 
 .top{
     width: 100%;
-    height: 15%;
+    /* height: 15%; */
+    height: 160px;
     background: #ffffff;
     padding: 10px;
 }
@@ -259,17 +260,16 @@ body {
 
 .main-content{
     width: 100%;
-    height: 85%;
+    /* height: 85%; */
     background: #eaeaea;
     display: grid;
     grid-template-areas:
         'top-row top-row top-row'
-        'colOne colTwo colThree'
         'colOne colTwo colThree';
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 90px 1fr 1fr;
+    grid-template-rows: 90px 1fr;
     gap: 10px;
-    padding: 40px 20px;
+    padding: 5px 20px;
     /* optional spacing between items */
 }
 
@@ -301,7 +301,7 @@ body {
 }
 
 /* first column */
-.colOne{
+.colOne, .colTwo, .colThree{
     /* padding: 10px; */
     display: flex;
     flex-direction: column;
@@ -412,11 +412,72 @@ body {
     gap: 15px;
 }
 
+/* second small section */
 
+/* images row in small section */
+.image-row{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* gap: 2px; */
+    padding: 10px 2px;
+}
+.image-row img{
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    border-radius: 8px;
+}
+.image-row p{
+    width: 30px;
+    height: 25px;
+    padding: 2px;
+    border-radius: 8px;
+    text-align: center;
+    background: lightgray;
+}
 
+/* ------------------------------------------------------- */
+/* second column */
+.gray-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgb(174, 174, 174);
+}
+/* first small section */
+/* under add subtask showing images */
+.image-row2{
+    display: flex;
+    padding: 10px 2px;
+    gap: 3px;
+}
+.image-row2 img{
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    border-radius: 8px;
+}
 
+/* column two section two h4 */
+.small-section .colTwo-secTwo-h4{
+    padding-bottom: 8px;
+    font-size: 0.8rem;
+}
 
+/* ------------------------------------------------------- */
+/* third column */
+/* green dot */
+.green-dot{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: green;
+}
 
+.thirdCol-sectionP{
+    padding-bottom: 10px;
+}
 /* ------------------------------------------------------------------------------- */
 /* chat section */
 .chat{
@@ -518,7 +579,7 @@ body {
     position: relative;
     width: 100%;
     padding: 10px 15px;
-    margin-top: auto
+    /* margin-top: auto */
 }
 
 .container input {
