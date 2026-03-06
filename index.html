@@ -31,7 +31,7 @@
                 </div>
                 <ul>
                     <li class="c"><i class="fa-solid fa-c"></i></li>
-                    <li><i class="fa-regular fa-comment"></i></li>
+                    <li><i class="fa-solid fa-grip"></i></li>
                     <li><i class="fa-regular fa-comment"></i></li>
                     <li><i class="fa-regular fa-message"></i></li>
                     <li><i class="fa-regular fa-circle-check"></i></li>
@@ -137,10 +137,7 @@
                             <img src="./images/addition.png" class="e">
                             
                     </div>
-                </div>
-
-                <!-- Fourth Layer for the main content -->
-                 
+                </div>                 
                 
             </div>
 
@@ -454,7 +451,6 @@
                 <img src="./images/pic2.jpg" alt="mira brown profile">
                 <h2>Mira Brown</h2>
                 <span>@mira.b</span>
-                <br>
                 <p>VisualDesign, Product Design, <br> Research, Typography & colors lover</p>
                 <br>
                 <div class="chat-button">
@@ -519,6 +515,18 @@
         </div>
     </div>
     
+
+
+
+    <!-- script -->
+     <script>
+        document.querySelectorAll(".small-Nav > ul > li").forEach(item => {
+            item.addEventListener("click", function (e) {
+                this.classList.toggle("active");
+                e.stopPropagation(); // prevents nested clicks breaking
+                });
+        });
+     </script>
 </body>
 
 </html>
