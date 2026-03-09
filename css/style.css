@@ -342,9 +342,7 @@ body {
     grid-template-rows: 85px 1fr;
     gap: 10px;
     padding: 5px 20px;
-    /* optional spacing between items */
 }
-
 .top-row{
     grid-area: top-row;
     /* background: rgb(255, 202, 229); */
@@ -482,6 +480,9 @@ hr{
 .hr{
     margin: 0 -10px;
 }
+.top-row-hr{
+    border: 1.5px solid #dadde0;
+}
 /* small section footer */
 .smallSections-footer{
     display: flex;
@@ -615,9 +616,17 @@ hr{
     color: #a7a7a7;
     font-size: 0.9rem;
 }
-
+.chat-wrapper{
+    flex: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+.chat-wrapper::-webkit-scrollbar {
+    display: none;
+}
 .info{
-    padding: 40px 20px 20px 20px;
+    padding: 40px 20px 40px 20px;
     text-align: center;
 }
 .info img{
@@ -650,7 +659,20 @@ hr{
     font-size: 0.9rem;
       
 }
-
+/* for text in center of hr in chat */
+.chat-hr{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    column-gap: 1rem;
+    font-weight: 600;
+}
+.chat-hr::before, .chat-hr::after{
+    content: '';
+    height: 1px;
+    background-color: #edf0f1;
+    display: block;
+}
 /* --------------------------------- */
 /* User chats */
 .User-chats{
@@ -726,7 +748,7 @@ hr{
     font-size: 16px;
 }
 
-.icon-left {
+.container .icon-left {
     position: absolute;
     left: 28px;
     top: 50%;
@@ -734,7 +756,7 @@ hr{
     color: gray;
 }
 
-.icon-right {
+.container .icon-right {
     position: absolute;
     right: 28px;
     top: 50%;
