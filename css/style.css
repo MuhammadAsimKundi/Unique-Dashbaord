@@ -50,32 +50,34 @@ body {
 /* for three dots in side bar top like macbook dots */
 .thee-dots {
     width: 100%;
-    height: 5%;
+    height: 8%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
+    padding-top: 15px;
 }
 .dot{
-    width: 12px;
-    height: 12px;
+    width: 11px;
+    height: 11px;
     border-radius: 50%;
-    margin: 4px;
+    margin: 2.5px;
 }
 
 .red {
-    background: red;
+    background: #ff0000ab;
 }
 
 .yellow {
-    background: yellow;
+    background: #ffa6009a;
 }
 
 .green {
-    background: green;
+    background: #008000c8;
 }
 
 /* for C icon */
 /* .c{
+
     background: lightgrey;
     border-radius: 50%;
     width: 100%;
@@ -87,7 +89,7 @@ body {
     width: 100%;
     height: auto;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     padding-left: 2px;
     
 }
@@ -95,20 +97,30 @@ body {
 .sideMain-Nav ul li {
     list-style: none;
     padding: 15px;
-    padding-bottom: 8px;
+    padding-bottom: 15px;
     border-left: 4px solid transparent;
     transition: all 0.5s ease;
 }
-.sideMain-Nav ul li:nth-child(1){
-    background: lightgray;
-    font-weight: 800;
-    color: black;
-}
+
 
 .sideMain-Nav ul li:hover {
     color: blue;
     border-left: 4px solid blue;
     border-radius: 4px;
+}
+
+
+.sideMain-Nav ul li:first-child i{
+    background: #edf0f1;
+    border: none;
+    text-align: center;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 /* ------------------------------------------------------ */
 /* small-Nav */
@@ -118,13 +130,13 @@ body {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    /* padding: 20px 30px; */
+    padding: 20px 13px;
     font-size: 0.8rem;
 } 
 .search-wrapper {
     position: relative;
     width: 100%;
-    padding: 20px 30px 0px 30px;
+    /* padding: 20px 30px 0px 30px; */
 }
 
 .search-wrapper input {
@@ -138,22 +150,21 @@ body {
 
 .search-icon {
     position: absolute;
-    left: 43px;
-    top: 66%;
+    left: 12px;
+    top: 50%;
     transform: translateY(-50%);
     color: gray;
+    font-size: 1.1rem;
     pointer-events: none;
 }
 
 .small-Nav ul{
     width: 100%;
-    text-align: left;
-    padding-left: 20px;
 }
 
 .small-Nav ul li{
     list-style: none;
-    padding: 5px;
+    padding: 7px;
     cursor: pointer;
     position: relative;
 }
@@ -161,9 +172,12 @@ body {
 /* hide inner dropdowns */
 .small-Nav ul li ul {
     display: none;
-    padding-left: 20px;
-    /* font-size: 0.8rem; */
 }
+
+/* it was not working, dont know why */
+/* .small-Nav ul li ul.uniqu-ul {
+    margin-left: 20px;
+} */
 
 /* show when active */
 .small-Nav ul li.active>ul {
@@ -268,32 +282,48 @@ body {
 
 
 .third-left{
+    display:flex;
+    align-items:center;
+    padding:0 72px;
+    position:relative;
+}
+
+.third-left img,.d,
+.ee{
+    width:40px;
+    height:40px;
+    border:4px solid #edf0f1;
+    border-radius:50%;
+    position:absolute;
+}
+
+.ee{
+    background:#edf0f1;
+    border: none;
+    color:#8a8a8a;
+    text-align: center;
+    padding-top: 13px;
+}
+
+.a{z-index:1; left:0;}
+.b{z-index:2; left:22px;}
+.c{z-index:3; left:44px;}
+.d{
+    z-index:4;
+    left:67px;
+    background: #edf0f1;
     display: flex;
+    justify-content: center;
     align-items: center;
-    padding: 0 55px;
-    position: relative;
+    border: none;
 }
-.third-left img{
-    width: 30px;
-    height: 30px;
-    border: 3px solid lightgray;
-    border-radius: 50%;
-    position: absolute;
-    /* top: 0; */
-}
+.ee{z-index:5; left:116px;}
 
-.a{z-index: 1; left: 0;}
-.b{z-index: 2; left: 20px ;}
-.c{z-index: 3; left: 40px;} 
-.d{z-index: 4; left: 60px;}
-.e{z-index: 5; left: 100px;}
-
-.divider {
-    position: absolute;
-    left: 91px;
-    font-size: 1.5rem;
-    color: lightslategray;
-    /* between 60px and 100px */
+.divider{
+    position:absolute;
+    left:107px;
+    font-size:1.8rem;
+    color:lightslategray;
 }
 
 
@@ -309,7 +339,7 @@ body {
         'top-row top-row top-row'
         'colOne colTwo colThree';
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 90px 1fr;
+    grid-template-rows: 85px 1fr;
     gap: 10px;
     padding: 5px 20px;
     /* optional spacing between items */
@@ -420,7 +450,11 @@ body {
     padding: 3px 7px 2px 7px;}
 
 /* remain text size on section other then request etc */
-.small-section h4,p,form{
+.small-section h4{
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+.small-section p,form{
     font-size: 0.8rem;
 }
 
@@ -440,6 +474,14 @@ body {
     color: #787878;
 }
 
+/* extracting hr to full section width */
+hr{
+    border: none;
+    border: 1px solid #edf0f1;
+}
+.hr{
+    margin: 0 -10px;
+}
 /* small section footer */
 .smallSections-footer{
     display: flex;
@@ -467,6 +509,8 @@ body {
 
 .smallSections-footer :nth-child(2) {
     gap: 15px;
+    font-size: 0.8rem;
+    color: #616161;
 }
 
 /* second small section */
@@ -552,14 +596,15 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 35px 20px 20px 20px;
 
 }
 .chat-Nav .fa-xmark{
-    background: #efefef;
-    color: #6c6c6c;
+    background: #edf0f1;
+    color: #494949;
     width: 30px;
     height: 30px;
+    font-size: 0.9rem;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -568,37 +613,41 @@ body {
 .chat-Nav div i{
     padding: 10px;
     color: #a7a7a7;
+    font-size: 0.9rem;
 }
 
 .info{
-    padding: 30px 20px 20px 20px;
+    padding: 40px 20px 20px 20px;
     text-align: center;
 }
 .info img{
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
 }
 .info h2{
-    font-weight: 400;
+    font-weight: 500;
 }
 .info span{
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     display: block;
-    font-weight: bold;
+    font-weight: 600;
     padding-bottom: 15px;
 }
 .info p{
-    color: #787878;
+    color: #686868;
+    font-size: 0.85rem;
 }
 
 
 .chat-button a{
-    padding: 8px;
+    padding: 6px 8px;
+    font-weight: 500;
     border: 1px solid lightgrey; 
     border-radius: 12px; 
     text-decoration: none;
     color: black;
+    font-size: 0.9rem;
       
 }
 
@@ -609,14 +658,17 @@ body {
     font-size: 0.85rem;
 }
 .User-chats div{
+    background: #edf0f1;
+    color: #494949;
     border: 1px solid lightgrey;
     border-radius: 12px;
-    padding: 5px;
+    padding: 4px 10px;
     margin: 5px 0;
 }
 .User-chats div span{
     display: block;
     text-align: right;
+    font-size: 0.6rem;
 }
 
 /* for blue background chats */
@@ -624,9 +676,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    background: none;
     border: none;
 }
-.send-chats {
+.User-chats div.send .send-chats {
     background: #5252ff;
     color: #fff;
     /* float: right; */
