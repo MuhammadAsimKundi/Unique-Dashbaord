@@ -358,6 +358,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 0.9rem;
+    font-weight: 500;
 }
 .top-row div ul{
     display: flex;
@@ -367,12 +369,13 @@ body {
 }
 .top-row div ul li{
     padding: 5px 10px;
-    font-size: 0.8rem;
+    /* font-size: 0.8rem; */
 }
 
 .top-row div ul li:hover {
     background: #dae2e8;
     border-radius: 8px;
+    color: black;
 }
 
 /* first column */
