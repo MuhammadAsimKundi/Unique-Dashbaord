@@ -50,17 +50,17 @@ body {
 /* for three dots in side bar top like macbook dots */
 .thee-dots {
     width: 100%;
-    height: 8%;
+    height: 6%;
     display: flex;
     justify-content: center;
     /* align-items: center; */
     padding-top: 15px;
 }
 .dot{
-    width: 11px;
-    height: 11px;
+    width: 10.5px;
+    height: 10.5px;
     border-radius: 50%;
-    margin: 2.5px;
+    margin: 2.5px 3px;
 }
 
 .red {
@@ -68,11 +68,11 @@ body {
 }
 
 .yellow {
-    background: #ffa6009a;
+    background: #ffa602b0;
 }
 
 .green {
-    background: #008000c8;
+    background: #00b400c4;
 }
 
 /* for C icon */
@@ -88,6 +88,7 @@ body {
 .sideMain-Nav ul{
     width: 100%;
     height: auto;
+    padding-right: 10px;
     text-align: center;
     font-size: 1.3rem;
     padding-left: 2px;
@@ -114,8 +115,9 @@ body {
     background: #edf0f1;
     border: none;
     text-align: center;
-    width: 55px;
-    height: 55px;
+    width: 44px;
+    height: 44px;
+    font-weight: bolder;
     border-radius: 50%;
     color: black;
     display: flex;
@@ -130,20 +132,21 @@ body {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 20px 13px;
+    padding: 20px 20px;
     font-size: 0.8rem;
 } 
 .search-wrapper {
     position: relative;
     width: 100%;
+    margin: 0px -10px;
     /* padding: 20px 30px 0px 30px; */
 }
 
 .search-wrapper input {
     width: 100%;
-    padding: 12px 12px 12px 40px;
+    padding: 5px 5px 5px 40px;
     /* left space for icon */
-    font-size: 1rem;
+    font-size: 0.9rem;
     border-radius: 12px;
     border: none;
 }
@@ -153,18 +156,21 @@ body {
     left: 12px;
     top: 50%;
     transform: translateY(-50%);
-    color: gray;
+    color: rgb(148, 148, 148);
     font-size: 1.1rem;
+    font-weight: 100;
     pointer-events: none;
 }
 
 .small-Nav ul{
     width: 100%;
+    /* padding-left: 7px; */
 }
 
 .small-Nav ul li{
     list-style: none;
     padding: 7px;
+    padding-left: 0;
     cursor: pointer;
     position: relative;
 }
