@@ -28,8 +28,8 @@ body {
 
 /* sidebar section */
 .sidebar{
-    border-right: 2px solid #e6e6e6;
-    width: 20%;
+    border-right: 2px solid #f3f6f8;
+    width: 21%;
     height: 100vh;
     color: #6c6c6c;
     /* for dividing place into two section using flexbox */
@@ -45,7 +45,8 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
-    border-right: 2px solid #e6e6e6;}
+    border-right: 2px solid #f3f6f8;
+}
 
 /* for three dots in side bar top like macbook dots */
 .thee-dots {
@@ -111,19 +112,25 @@ body {
 }
 
 
-.sideMain-Nav ul li:first-child i{
-    background: #edf0f1;
-    border: none;
-    text-align: center;
-    width: 44px;
-    height: 44px;
-    font-weight: bolder;
+.sideMain-Nav ul li.c {
+    width: 50px;
+    height: 50px;
+    background: #e9edf0;
+
     border-radius: 50%;
-    color: black;
+    border: none;
+
+    font-size: 2rem;
+    font-weight: 900;
+    color: #1f2933;
+
     display: flex;
     justify-content: center;
     align-items: center;
+
+    margin: 8px auto 20px auto;
 }
+
 /* ------------------------------------------------------ */
 /* small-Nav */
 .small-Nav{
@@ -175,8 +182,46 @@ body {
     position: relative;
 }
 
+
 /* hide inner dropdowns */
 .small-Nav ul li ul {
+    display: none;
+}
+.small-Nav ul li .uniqu-ul {
+    /* adding border for connector */
+    margin-left: 4px;
+    padding-left: 20px;
+    display: block;
+}
+/* adding fake element as connector */
+.uniqu-ul li {
+    position: relative;
+    list-style: none;
+    /* padding: 10px 0 10px 15px; */
+    line-height: 2em;
+}
+.uniqu-ul li::before {
+    position: absolute;
+    left: -20px;
+    top: 0px;
+    border-left: 2px solid lightgray;
+    border-bottom: 2px solid lightgrey;
+    border-bottom-left-radius: 5px;
+    content: '';
+    width: 8px;
+    height: 2em;
+}
+
+.uniqu-ul li::after {
+    position: absolute;
+    left: -20px;
+    bottom: 0;
+    border-left: 2px solid lightgray;
+    content: '';
+    width: 8px;
+    height: 2em;
+}
+.uniqu-ul li:last-child::after {
     display: none;
 }
 
@@ -195,7 +240,7 @@ body {
 /* main section */
 .main{
     /* border: 1px solid grey; */
-    width: 55%;
+    width: 55.75%;
     min-height: 100%;
 }
 
@@ -204,45 +249,84 @@ body {
     /* height: 15%; */
     height: 157.5px;
     background: #ffffff;
-    padding: 10px;
+    padding: 8px 5px 12px 5px;
     position: sticky;
     top: 0;
 }
 /* first layer */
 .first-layer{
-    padding: 20px 20px 1px 20px;
+    padding: 20px 25px 1px 20px;
+    font-weight: 300;
     display: flex;
     justify-content: space-between;
     
 }
 .first-layer div{
+    
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
+.first-layer div span {
+    width: 1rem;
+    height: 1rem;
+    border: 3px solid #5b9fff;
+    border-radius: 3px;
+}
+.first-layer div h4{
+    font-size: 1.55rem;
+    font-weight: 600;
+}
+
 .first-layer ul{
     display: flex;
     align-items: center;
+    font-size: 1.15rem;
     gap: 20px;
     list-style: none;
-    color: rgb(95, 95, 95) ;
+    color: #5f5f5f ;
 }
-/* .first-layer ul li{
-    color: #2a2a2a;
-} */
+.first-layer ul li{
+    padding: 0px 2px;
+}
 
 /* second layer */
 .second-layer{
     width: 100%;
-    padding: 0 0 22px 50px;
+    padding: 0 0 0 20px;
+    /* border-left: 2px solid grey; */
+    margin-left: 27px;
 }
 .second-layer ul{
     display: flex;
     align-items: center;
     gap: 5px;
     list-style: none;
+    line-height: 2.5em;
+    position: relative;
 }
+
+.second-layer ul::before{
+    position: absolute;
+    left: -20px;
+    top: 0px;
+    border-left: 2px solid lightgray;
+    border-bottom: 2px solid lightgrey;
+    border-bottom-left-radius: 5px;
+    content: '';
+    width: 8px;
+    height: 1.2em;
+}
+/* .second-layer ul::after {
+    position: absolute;
+    left: -20px;
+    bottom: 0px;
+    border-left: 2px solid grey;
+    content: '';
+    width: 8px;
+    height: 1em;
+} */
 .second-layer ul li {
     font-size: 0.8rem;
     color: #787878;
@@ -298,17 +382,19 @@ body {
 .ee{
     width:40px;
     height:40px;
-    border:4px solid #edf0f1;
+    border:4px solid #f3f6f8;
     border-radius:50%;
     position:absolute;
 }
 
 .ee{
-    background:#edf0f1;
+    width: 35px;
+    height: 35px;
+    background:#f3f6f8;
     border: none;
     color:#8a8a8a;
     text-align: center;
-    padding-top: 13px;
+    padding-top: 10px;
 }
 
 .a{z-index:1; left:0;}
@@ -317,19 +403,20 @@ body {
 .d{
     z-index:4;
     left:67px;
-    background: #edf0f1;
+    background: #f3f6f8;
     display: flex;
     justify-content: center;
     align-items: center;
     border: none;
 }
-.ee{z-index:5; left:116px;}
+.ee{z-index:5; left:121px;}
 
 .divider{
     position:absolute;
-    left:107px;
-    font-size:1.8rem;
-    color:lightslategray;
+    left:110px;
+    font-size:2rem;
+    font-weight: 200;
+    color:#eaeced;
 }
 
 
@@ -339,7 +426,7 @@ body {
 .main-content{
     width: 100%;
     /* height: 85%; */
-    background: #edf0f1;
+    background: #f3f6f8;
     display: grid;
     grid-template-areas:
         'top-row top-row top-row'
@@ -347,7 +434,7 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 85px 1fr;
     gap: 10px;
-    padding: 5px 20px;
+    padding: 5px 27px;
 }
 .top-row{
     grid-area: top-row;
@@ -379,23 +466,24 @@ body {
 }
 
 .top-row div ul li:hover {
-    background: #dae2e8;
+    background: #e4e9eb;
     border-radius: 8px;
     color: black;
 }
 
 /* first column */
 .colOne, .colTwo, .colThree{
-    /* padding: 10px; */
+    padding: 1px;
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 7px;
 }
 .request{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 1px;
+    padding-bottom: 3px;
     color: #353535;
 }
 .request div{
@@ -419,9 +507,10 @@ body {
 /* + addition sign */
 .additionSign{
     width: 100%;
-    height: 32px;
+    height: 38px;
     background-color: #fff;
     border-radius: 7px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.01);
     font-size: 0.9rem;
     display: flex;
     justify-content: center;
@@ -431,9 +520,9 @@ body {
 /* small section */
 .small-section{
     background: #fff;
-    border-radius: 7px;
-    padding: 10px;
-}
+    border-radius: 9px;
+    padding: 5px 16px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.01);}
 
 .section-icon-ul{
     list-style: none;
@@ -460,9 +549,11 @@ body {
 .small-section h4{
     font-size: 0.9rem;
     font-weight: 600;
+    padding-top: 3px;
+    padding-bottom: 2px;
 }
 .small-section p,form{
-    font-size: 0.8rem;
+    font-size: 0.85rem;
 }
 
 .radio-form{
@@ -484,13 +575,13 @@ body {
 /* extracting hr to full section width */
 hr{
     border: none;
-    border: 1px solid #edf0f1;
+    border: 1px solid #f3f6f8;
 }
 .hr{
     margin: 0 -10px;
 }
 .top-row-hr{
-    border: 1.5px solid #dadde0;
+    border: 1.5px solid #e4e9eb;
 }
 /* small section footer */
 .smallSections-footer{
@@ -508,7 +599,7 @@ hr{
 .smallSections-footer>div img{
     width: 30px;
     height: 30px;
-    border: 2px solid lightgray;
+    border: 2px solid #f3f6f8;
     border-radius: 50%;
 }
 
@@ -545,7 +636,7 @@ hr{
     padding: 2px;
     border-radius: 8px;
     text-align: center;
-    background: lightgray;
+    background: #f3f6f8;
 }
 
 /* ------------------------------------------------------- */
@@ -592,25 +683,24 @@ hr{
 /* ------------------------------------------------------------------------------- */
 /* chat section */
 .chat{
-    border-left: 2px solid #e6e6e6;
-    width: 25%;
+    border-left: 2px solid #f3f6f8;
+    width: 23.5%;
     height: 100vh;
     display: flex;
     flex-direction: column;
     position: sticky;
-    top: 0;
-    
+    top: 0;    
 }
 
 .chat-Nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 35px 20px 20px 20px;
+    padding: 30px 20px 20px 23.5px;
 
 }
 .chat-Nav .fa-xmark{
-    background: #edf0f1;
+    background: #f3f6f8;
     color: #494949;
     width: 30px;
     height: 30px;
@@ -635,15 +725,17 @@ hr{
     display: none;
 }
 .info{
-    padding: 40px 20px 40px 20px;
+    padding: 30px 20px 58px 23.5px;
     text-align: center;
 }
+
 .info img{
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
 }
 .info h2{
+    margin-top: 4px;
     font-weight: 500;
 }
 .info span{
@@ -679,19 +771,18 @@ hr{
 .chat-hr::before, .chat-hr::after{
     content: '';
     height: 1px;
-    background-color: #edf0f1;
+    background-color: #f3f6f8;
     display: block;
 }
 /* --------------------------------- */
 /* User chats */
 .User-chats{
     padding: 30px 20px 20px 20px;
-    font-size: 0.85rem;
+    font-size: 0.8rem;
 }
 .User-chats div{
-    background: #edf0f1;
+    background: #f3f6f8;
     color: #494949;
-    border: 1px solid lightgrey;
     border-radius: 12px;
     padding: 4px 10px;
     margin: 5px 0;
