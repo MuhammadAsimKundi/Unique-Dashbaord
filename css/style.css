@@ -110,6 +110,9 @@ body {
     border-left: 4px solid blue;
     border-radius: 4px;
 }
+.sideMain-Nav ul li i:hover {
+    font-weight: bold;
+}
 
 
 .sideMain-Nav ul li.c {
@@ -129,6 +132,30 @@ body {
     align-items: center;
 
     margin: 8px auto 20px auto;
+}
+
+/* adding notification to message nav li */
+.rightNav-notif{
+    position: relative;
+}
+.rightNav-notif::after{
+    content: '2';
+    width: 14px;
+    height: 14px;
+    border: 3px solid #fff;
+    background: red;
+    color: #fff;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: bold;
+
+    position: absolute;
+    top: 10px;
+    left: 39px;
 }
 
 /* ------------------------------------------------------ */
@@ -193,6 +220,67 @@ body {
     padding-left: 20px;
     display: block;
 }
+
+/* adding notifical in front of unique li */
+.unique{
+    position: relative;
+    /* background: red; */
+}
+.unique-label{
+    background: #f3f6f8;
+    padding: 5px 100px 5px 1px;
+    border-radius: 5px;
+    font-weight: 600;
+    color: black;
+}
+.unique::after{
+    content: '2';
+    width: 14px;
+    height: 14px;
+    border: 3px solid #fff;
+    background: red;
+    color: #fff;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: bold;
+
+    position: absolute;
+    top: 8px;
+    left: 145px;
+}
+
+
+
+/* adding notifical to Virgin-notif */
+.Virgin-notif{
+    position: relative;
+}
+
+.Virgin-notif::after {
+    content: '1';
+    width: 14px;
+    height: 14px;
+    border: 3px solid #fff;
+    background: red;
+    color: #fff;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: bold;
+
+    position: absolute;
+    top: 8px;
+    left: 150px;
+}
+
+
 /* adding fake element as connector */
 .uniqu-ul li {
     position: relative;
@@ -353,7 +441,7 @@ body {
 .third-right ul{
     display: flex;
     /* align-items: center; */
-    gap: 25px;
+    gap: 45px;
     list-style: none;
     color: #5e5e5e;
 }
@@ -368,6 +456,31 @@ body {
     border-bottom: 2.5px solid blue;
     border-bottom-left-radius: 2.5px;
     border-bottom-right-radius: 2.5px;
+}
+
+/* adding notification infront of discussion in third layer */
+.third-layer ul li:first-child {
+    position: relative;
+}
+
+.third-layer ul li:first-child::after {
+    content: '3';
+    width: 17px;
+    height: 17px;
+    border: 5px solid #fff;
+    background: red;
+    color: #fff;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: bold;
+
+    position: absolute;
+    top: -1px;
+    left: 87px;
 }
 
 
